@@ -1,0 +1,12 @@
+n=-7:7;
+x1=[ 0 0 0 1 2 3 4 ];
+even = [x1,5,x1(length(x1):-1:1)];
+
+
+a=gca()
+a.thickness=2;
+a.y_location="Middle";
+
+
+plot2d3('gnn',n,even)
+xtitle('Graphical Representation of Even Signals , 'n' , 'x[n]' );
